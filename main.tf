@@ -1,6 +1,6 @@
 resource "azurerm_resource_group" "app" {
   name     = var.resource_group_name
-  location = "West US 2"
+  location = "West US"
   tags = merge(var.tags, {
     Name = "${var.tags.owner}-rg"
   })
